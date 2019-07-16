@@ -1,0 +1,31 @@
+<md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" validUntil="2019-07-18T15:14:52Z" cacheDuration="PT604800S" entityID="php:saml2:test:1">
+<md:SPSSODescriptor AuthnRequestsSigned="true" WantAssertionsSigned="false" protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+<md:KeyDescriptor use="signing">
+<ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+<ds:X509Data>
+<ds:X509Certificate>
+MIIDnTCCAoWgAwIBAgIJAPI1H6HsvD6tMA0GCSqGSIb3DQEBCwUAMGUxCzAJBgNVBAYTAlVTMQswCQYDVQQIDAJVVDENMAsGA1UEBwwET3JlbTESMBAGA1UECgwJbG9jYWxob3N0MRIwEAYDVQQLDAlsb2NhbGhvc3QxEjAQBgNVBAMMCWxvY2FsaG9zdDAeFw0xOTA3MTYxNDUyMjJaFw0xOTA4MTUxNDUyMjJaMGUxCzAJBgNVBAYTAlVTMQswCQYDVQQIDAJVVDENMAsGA1UEBwwET3JlbTESMBAGA1UECgwJbG9jYWxob3N0MRIwEAYDVQQLDAlsb2NhbGhvc3QxEjAQBgNVBAMMCWxvY2FsaG9zdDCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAL7P7yf+XXFJAs+B5pZY90WCHWY2+VsjpYZIaUY051z6fyb2z5UmVtk6MFhBAYeUBuwCecVLSrkec0SP8OXgO2cLRZOMICQ/Sho3pqS1IIbVMFMHXZhuzUqaic6KeC28R67ZC+L6HlYUFVVWyaFAtzxOYx2W4hK2oNKvWIMlxSNXAAoSox1FgUQW2KSF9MUlEpv8Fg8THc4T467JI0I2yoBgKkNZZEznKp3Do4RCvCkljDY76quJh26PnSR324xchCxsFwTrIyHd3jbVNL9ZgYAUP+vb8K+daop3sQBx/TonJ7EgGxOB/KyVrNWLBbo9fQGxdx/zLh5xNFl2Zza/wskCAwEAAaNQME4wHQYDVR0OBBYEFNhwZOJQROTBC0lb0b0d1R9gIg9zMB8GA1UdIwQYMBaAFNhwZOJQROTBC0lb0b0d1R9gIg9zMAwGA1UdEwQFMAMBAf8wDQYJKoZIhvcNAQELBQADggEBAIOqGfKwrR7Tkzr3p229Mk+JUa+qzcYfoVQvYAN3ySwLgS8N0syZFxslfC6/xc3t0AZtvO+2gH0FNCkbb1CVHc8BVSZpO2UKYCjSLy8/vxV6r1JR9xZa73aj633l7+WTcgobXXZ+o2l/ZGt8lj86Th+nR5tqrEPXCWmjj9S56KUYxYZfE3Yt76GRzrvTEhKpx75qXA5u6QEQj4j0Ddppmg30ol3DePOvV3YQDyBZY5+N+MYHzpYtop5+eDRv7jxvyHnZjod1ATrok0GD9ZCfZoED5EA0XCE0ZNeYZNGEwvvCrlVF3V6EsPYwnyW7H5+eFVlAWxZI3wyzfmh+YA3JF8U=
+</ds:X509Certificate>
+</ds:X509Data>
+</ds:KeyInfo>
+</md:KeyDescriptor>
+<md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="http://localhost:8000/saml2/sls"/>
+<md:NameIDFormat>
+urn:oasis:names:tc:SAML:2.0:nameid-format:persistent
+</md:NameIDFormat>
+<md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="http://localhost:8000/saml2/acs" index="1"/>
+</md:SPSSODescriptor>
+<md:Organization>
+<md:OrganizationName xml:lang="en-US">Name</md:OrganizationName>
+<md:OrganizationDisplayName xml:lang="en-US">Display Name</md:OrganizationDisplayName>
+<md:OrganizationURL xml:lang="en-US">http://url</md:OrganizationURL>
+</md:Organization>
+<md:ContactPerson contactType="technical">
+<md:GivenName>name</md:GivenName>
+<md:EmailAddress>no@reply.com</md:EmailAddress>
+</md:ContactPerson>
+<md:ContactPerson contactType="support">
+<md:GivenName>Support</md:GivenName>
+<md:EmailAddress>no@reply.com</md:EmailAddress>
+</md:ContactPerson>
+</md:EntityDescriptor>
